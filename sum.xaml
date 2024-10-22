@@ -124,6 +124,7 @@
       <Variable x:TypeArguments="x:Int32" Name="total" />
       <Variable x:TypeArguments="x:String" Name="variable3" />
       <Variable x:TypeArguments="x:String" Name="Filepath" />
+      <Variable x:TypeArguments="x:String" Name="Filepathname" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -136,7 +137,7 @@
       </Assign.Value>
     </Assign>
     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="452,122" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[argument1]" />
-    <ui:SelectFile DisplayName="Browse For File" Filter="All files (*.*)|*.*" sap:VirtualizedContainerService.HintSize="452,170" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[Filepath]" />
+    <ui:SelectFile DisplayName="Browse For File" Filter="All files (*.*)|*.*" sap:VirtualizedContainerService.HintSize="452,170" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[Filepathname]" />
     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452,219" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_3">
