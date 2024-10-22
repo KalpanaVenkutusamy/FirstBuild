@@ -132,8 +132,11 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Assign sap:VirtualizedContainerService.HintSize="452,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[filepathname]</OutArgument>
+      </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:Object">[string.Join(" ", variable1)]</InArgument>
+        <InArgument x:TypeArguments="x:String">[string.Join(" ", variable1)]</InArgument>
       </Assign.Value>
     </Assign>
     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="452,122" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[argument1]" />
